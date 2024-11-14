@@ -1,5 +1,5 @@
-# camp-ellie.github.io
+# eleanorcamp.github.io
 My personal website
 
-Link to html page: <a href="./source/ufoReport.html">UFO Report</a>
+This is where I'll be posting projects I've worked on, as well as any updates I'd like to share
 
