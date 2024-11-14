@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <link rel="shortcut icon" href="./pics/cube4.ico">
+    <title>Camp Cube Demo</title>
+    <!-- Include any necessary CSS or external libraries for 3D rendering -->
+    <!-- For example, you might need Three.js or another 3D graphics library -->
+    <!-- Add those dependencies here -->
+    <script src="./lib/three-r95.all.js"></script>
+    <script src="./lib/OrbitControls-r95.js"></script>
+    <script src="./lib/tw.js"></script>
+    <script src="./lib/dat.gui-r95.js"></script>
+    <script src="./RubiksCube/cube2.js"></script>
+    <script src="./RubiksCube/stickers.js"></script>
+    <script src="./RubiksCube/turns.js"></script>
+    
+
+
+
+    <style>
+        body {
+            background-color: #b8dbff;
+        }
+        #button {
+            display: inline-block;
+            padding: 10px 20px; 
+            background-color: #e687d2; /* pink background color */
+            color: #fff; /* White text color */
+            text-decoration: none; /* Remove default underline */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Adjust font size as needed */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Add a smooth transition effect */
+        }
+        #resetButton {
+            display: inline-block;
+            padding: 10px 20px; 
+            background-color: #e687d2; /* Green background color */
+            color: #fff; /* White text color */
+            text-decoration: none; /* Remove default underline */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Adjust font size as needed */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Add a smooth transition effect */
+        }
+
+        /* Apply hover effect to change background color */
+        #button:hover {
+            background-color: #b56ba5; /* Darker green on hover */
+        }
+        canvas {
+            display: block;
+            margin: 10px auto;
+            width: 80%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rubik's Cube Demo</h1>
+
+
+    <div id="rubiksCubeContainer">
+    </div>
+
+    <script src="./RubiksCube/demo3.js"></script>
+
+    <div>
+        <p>
+            Instructions: <br>
+            Press ' u ' to rotate the U face (top face) clockwise. <br>
+            Press ' U ' to rotate the U face counterclockwise <br>
+            <br>
+            Press ' r ' to rotate the R face (right face) clockwise. <br>
+            Press ' R ' to rotate the R face counterclockwise <br>
+            <br>
+            Press ' l ' to rotate the L face (left face) clockwise. <br>
+            Press ' L ' to rotate the L face counterclockwise <br>
+            <br>
+            Press ' d ' to rotate the D face (bottom face) clockwise. <br>
+            Press ' D ' to rotate the D face counterclockwise <br>
+            <br>
+            Press ' f ' to rotate the F face (front face) clockwise. <br>
+            Press ' F ' to rotate the F face counterclockwise <br>
+            <br>
+            Press ' b ' to rotate the B face (back face) clockwise. <br>
+            Press ' B ' to rotate the B face counterclockwise <br>
+            <br>
+            
+
+        </p>
+    </div>
+
+
+    <a id="button" style="width: 200px; height: 30px; display: flex; justify-content: center; align-items: center; margin: auto; margin-top: 40px;" href="./description.html">Back to description</a>
+
+
+</body>
+</html>

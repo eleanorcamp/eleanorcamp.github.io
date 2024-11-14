@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./pics/cube4.ico">
+    <title>Camp Cube</title>
+    <style>
+        body {
+            background-color: #b8dbff;
+        }
+        #button {
+            display: inline-block;
+            padding: 10px 20px; 
+            background-color: #e687d2; /* pink background color */
+            color: #fff; /* White text color */
+            text-decoration: none; /* Remove default underline */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Adjust font size as needed */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Add a smooth transition effect */
+        }
+
+        /* Apply hover effect to change background color */
+        #button:hover {
+            background-color: #b56ba5; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rubik's Cube Project Description</h1>
+
+    <p>For my final project, I wanted to make an interactive Rubik's Cube. <br>
+       My current demo:
+    </p>
+
+    <a id="button" style="width: 75px; height: 40px; display: flex; justify-content: center; align-items: center; margin: auto;" href="./demo.html">DEMO</a>
+
+    <p>Some of the concepts from this class that are being put into use with 
+        project are:
+        <ul>
+            <li>Hierarchical modeling</li>
+            <li>Material and lighting use</li>
+            <li>Basic texture mapping</li>
+            <li><b>User interaction</b></li>
+            <li>Animation (hopefully)</li>
+        </ul>
+    </p>
+    
+    <div>
+        <p>
+            There were <em>lots</em> of difficulties trying to make this cube.
+            The first hardship was actually making the cube. I like how <a href="https://www.google.com/search?client=firefox-b-1-d&sca_esv=f6f50a6712d31ad4&q=stickerless+rubiks+cube&uds=H4sIAAAAAAAA_-Ny52LzzE1MTy0WEi8uyUzOTi3KSS0uVigqTcrMLlZILk1KNWCzYpNi4WLiYCrCpWQHI6MRLjkAiaFATmIAAAA&udm=2&sa=X&ved=2ahUKEwih75m6re2CAxUISDABHbHfBmAQtKgLegQIDxAB&biw=1440&bih=713&dpr=2">stickerless</a>
+            Rubik's cubes look, but modeling the different parts of a stickerless cube is 
+            a lot more difficult than a stickered one. To get the stickered approach, I made some 
+            textures that were just colored squares with black borders to get the same product.
+            Example: 
+        </p>
+        <img src="./pics/cube.png" width="300" height="200" alt="floating rubiks cube">
+    </div>
+
+    <div>
+        <p>
+            Another interesting bug was trying to move the right pieces. The model is made 
+            up of many smaller pieces, so there were a lot to incorrectly target. This 
+            would result in lots of impossible configurations of the cube, such as:
+        </p>
+        <img src="./pics/BadCorners.png" width="300" height="200" alt="rubiks cube with impossible corners">
+    </div>
+
+    <div>
+        <p>
+            After selecting the right pieces, things did not always turn out well...
+            Pieces tended to vanish, and vanish and I don't know how/why. 
+        </p>
+        <img src="./pics/MissingPieces.png" width="300" height="200" alt="rubiks cube with random pieces missing">
+    </div>
+
+    <div>
+        <h3>Starting over</h3>
+        <p>
+            A few days before the project was due I came to the realization that I had to start my cube
+            from (almost) scratch. The structure that I had built it on was incapable of handling so many turns and
+            compounded rotations. Instead of thinking of the cube in cubies, I needed to be able to access individual 
+            colors and faces. So I completely redid the building of the cube, first loading in blank pieces to be 
+            the cube model, and then loading in textured planes to represent the stickers of the cube. <br> <br>
+
+            I still don't have the animation quite figured out. However, with the black cubes rotating I hope that
+            you, the user, can see the vision of how it should be animating. What is most important is that there is a 
+            modeled cube that can react to the turns that are input and accurately represent the state of the cube.
+        </p>
+    </div>
+
+    <div>
+        <h2>Thank you!</h2>
+        <p>I really appreciate you taking the time to check out my page and see a cool project I worked on this semester.
+            Thanks!
+        </p>
+    </div>
+
+
+</body>
+</html>
