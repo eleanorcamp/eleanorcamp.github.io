@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #faf3ef; /* Soft beige/cream background */
+    background-color: #e3e2df; /* Soft beige/cream background */
     color: #4a4a4a;
 }
 
@@ -18,22 +18,22 @@ body {
 header {
     padding: 20px;
     text-align: center;
-    background-color: #fff; /* White background */
-    color: #4a4a4a;
+    background-color: #e3afbc; /* White background */
+    /*color: #4a4a4a;*/
     width: 100%;
-    border-bottom: 3px solid #ffd1dc; /* Light pink accent */
+    border-bottom: 3px solid #ee4c7c; /* Light pink accent */
     border-radius: 0 0 15px 15px;
 }
 
 header h1 {
     font-size: 2.5em;
     font-weight: bold;
-    color: #d96c9f; /* Muted pink */
+    color: #9a1750; /* Muted pink */
 }
 
 header p {
     font-size: 1.1em;
-    color: #7a5e80; /* Soft purple-gray */
+    color: #5d001e; /* Soft purple-gray */
     margin-top: 8px;
 }
 
@@ -42,17 +42,17 @@ header p {
     max-width: 800px;
     margin: 40px auto;
     padding: 30px;
-    background-color: #ffffff;
+    background-color: #e3afbc;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    border: 1px solid #ffd1dc; /* Light pink border */
+    border: 1px solid #9a1750; /* Light pink border */
 }
 
 /* Section Titles */
 .section-title {
     font-size: 1.8em;
     margin-bottom: 25px;
-    color: #d96c9f; /* Pink accent */
+    color: #9a1750; /* Pink accent */
     border-bottom: 2px dotted #ffd1dc;
     padding-bottom: 5px;
 }
@@ -61,7 +61,7 @@ header p {
 .project {
     margin-bottom: 25px;
     padding: 15px;
-    background-color: #faf3ef; 
+    background-color: #ffe6ec; 
     border-radius: 10px;
     border: 1px solid #ffd1dc;
 }
@@ -99,4 +99,23 @@ a:hover {
 /* Additional Padding for About Me Section */
 .container section p {
     margin-bottom: 1em;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #7a5e80; /* Soft purple-gray */
+}
+
+.contact-info a {
+    color: #9a1750; /* Muted pink */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.contact-info a:hover {
+    color: #d896b5; /* Slightly darker pink */
+    text-decoration: underline;
 }
