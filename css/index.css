@@ -1,4 +1,13 @@
 /* Reset and Base Styling */
+/*
+    Color palatte:
+        #fea8cd - Very soft pink
+        #660053 - Very dark magenta
+        #bdbbb6 - Grayish orange
+
+        #e5d1d0 - Light grayish red
+        #f5e4d7 - Light grayish orange
+*/
 * {
     margin: 0;
     padding: 0;
@@ -10,15 +19,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e3e2df; /* Soft beige/cream background */
-    color: #4a4a4a;
+    background-color: #f5e4d7; /* Soft beige/cream background */
+    color: #2b0123;
 }
 
 /* Header Styling */
 header {
     padding: 20px;
     text-align: center;
-    background-color: #e3afbc; /* White background */
+    background-color: #e3afbc; /* White background e3afbc*/
     /*color: #4a4a4a;*/
     width: 100%;
     border-bottom: 3px solid #ee4c7c; /* Light pink accent */
@@ -33,7 +42,7 @@ header h1 {
 
 header p {
     font-size: 1.1em;
-    color: #5d001e; /* Soft purple-gray */
+    color: #2b0123; /* Soft purple-gray */
     margin-top: 8px;
 }
 
