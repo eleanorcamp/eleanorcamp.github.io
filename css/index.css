@@ -19,12 +19,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f5e4d7; /* Soft beige/cream background */
+    background-color: #bcbcbc; /* Soft beige/cream background */
     color: #2b0123;
 }
 
 /* Header Styling */
-header {
+.header {
     padding: 20px;
     text-align: center;
     background-color: #e3afbc; /* White background e3afbc*/
@@ -34,17 +34,100 @@ header {
     border-radius: 0 0 15px 15px;
 }
 
-header h1 {
+.header h1 {
     font-size: 2.5em;
     font-weight: bold;
     color: #9a1750; /* Muted pink */
 }
 
-header p {
+.header p {
     font-size: 1.1em;
     color: #2b0123; /* Soft purple-gray */
     margin-top: 8px;
 }
+
+
+
+
+
+
+
+
+.heading{
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 0px 200px;
+    padding-bottom: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header-wrapper{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text{
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-subtext, a{
+    font-size: 18px;
+    color: #E5E7Eb;
+}
+
+.text-half{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* margin-right: auto; */
+    gap: 5px;
+}
+
+.image-holder{
+    display: flex;
+    background-color: #818181c3;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #E5E7Eb;
+}
+
+.header-bar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header-bar .logo{
+    flex: 1;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.sign-up-button{
+    background-color: #3882F6;
+    width: 100px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: 800;
+}
+
+
+
 
 /* Container Styling */
 .container {
@@ -67,7 +150,7 @@ header p {
 }
 
 /* Project Styling */
-.project {
+.project-card {
     margin-bottom: 25px;
     padding: 15px;
     background-color: #ffe6ec; 
@@ -87,7 +170,7 @@ header p {
 }
 
 /* Footer Styling */
-footer {
+.footer {
     margin-top: 50px;
     padding: 20px;
     text-align: center;
@@ -127,4 +210,43 @@ a:hover {
 .contact-info a:hover {
     color: #d896b5; /* Slightly darker pink */
     text-decoration: underline;
+}
+
+
+/* --------create new styles-------- */
+
+.main-body{
+    display: flex;
+    flex-direction: column;
+    /* gap: 80px; */
+}
+
+.about-me{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    justify-content: space-evenly;
+
+}
+
+.project-section-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card{
+    max-width: 45%;
+}
+
+#scroll-test{
+    flex-grow: 1;
 }
