@@ -62,14 +62,36 @@ body {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    width: 100%;
 }
 
 .header-wrapper{
     display: flex;
     padding: 20px;
     justify-content: space-between;
-    gap: 40px;
+    align-items: center;
+    /* gap: 200px; */
 }
+
+.header-image-wrapper{
+    display: flex;
+    width: fit-content;
+    /* justify-content:center;
+    align-items: center;
+    flex-basis: content;
+    width: fit-content; */
+    background-color: purple;
+    /* flex: 0 0 auto; */
+    width: auto;
+}
+
+.invisible-div{
+    width: 30%;
+}
+
+/* img{
+    display: block;
+} */
 
 .hero-text{
     font-size: 48px;
@@ -84,9 +106,12 @@ body {
 .text-half{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    flex: 1;
+    max-width: 600px;
     /* margin-right: auto; */
-    gap: 5px;
+    gap: 10px;
+    /* flex-grow: 3; */
+    /* flex-basis: 66%; */
 }
 
 .image-holder{
@@ -103,9 +128,10 @@ a{
 }
 
 .header-bar{
-    padding: 20px;
+    padding: 0px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
 }
 
@@ -113,6 +139,16 @@ a{
     flex: 1;
     font-size: 24px;
     color: #F9FAF8;
+}
+
+.header-logo{
+    max-width: 25%;
+}
+
+.header-image{
+    /* width: 33%; */
+    max-width: 200px;
+    /* max-height: fit-content; */
 }
 
 .sign-up-button{
@@ -226,10 +262,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 
-.card-wrapper{
+.course-projects{
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 0;
@@ -249,4 +286,12 @@ a:hover {
 
 #scroll-test{
     flex-grow: 1;
+}
+
+.footer{
+    display: flex;
+    background-color: #1F2937;
+    justify-content: space-between;
+    /* flex-grow: 1; */
+    width: 100%;
 }
