@@ -251,6 +251,23 @@ a:hover {
 
 /* --------create new styles-------- */
 
+
+.project-card{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 40%;
+}
+
+.thumbnail-wrapper img{
+    max-width: 150px;
+}
+
+.project-info-wrapper{
+    text-align: center;
+    flex-basis: 275px;
+}
+
+
 .main-body{
     display: flex;
     flex-direction: column;
@@ -271,7 +288,12 @@ a:hover {
     flex-wrap: wrap;
     flex: 1 1 0;
     justify-content: space-evenly;
+    gap: 30px;
+}
 
+.clickable-div{
+    display: block;
+    /* width: 100%; */
 }
 
 .project-section-header{
@@ -281,10 +303,6 @@ a:hover {
     justify-content: center;
     gap: 10px;
     padding: 20px;
-}
-
-.project-card{
-    max-width: 45%;
 }
 
 #scroll-test{
