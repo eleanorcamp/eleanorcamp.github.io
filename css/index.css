@@ -252,10 +252,17 @@ a:hover {
 /* --------create new styles-------- */
 
 
+.clickable-div{
+    display: inline-flex;
+    width: 576px;
+    /* background-color: red; */
+}
+
 .project-card{
     display: flex;
     justify-content: space-around;
-    flex-basis: 40%;
+    flex-basis: 576px;
+    /* width: 40%; */
 }
 
 .thumbnail-wrapper img{
@@ -266,6 +273,7 @@ a:hover {
     text-align: center;
     flex-basis: 275px;
 }
+
 
 
 .main-body{
@@ -291,10 +299,6 @@ a:hover {
     gap: 30px;
 }
 
-.clickable-div{
-    display: block;
-    /* width: 100%; */
-}
 
 .project-section-header{
     display: flex;
