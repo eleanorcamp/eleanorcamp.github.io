@@ -320,3 +320,20 @@ a:hover {
     /* flex-grow: 1; */
     width: 100%;
 }
+
+
+
+
+
+.project-full-description {
+    display: none;
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: #4a4a4a;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+.project-card.expanded .project-full-description {
+    display: block;
+}
